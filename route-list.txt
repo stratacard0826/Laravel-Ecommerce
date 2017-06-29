@@ -1,0 +1,29 @@
++--------+--------------------------------+----------------------------------------------+------------------------------+--------------------------------------------------------------------+------------+
+| Domain | Method                         | URI                                          | Name                         | Action                                                             | Middleware |
++--------+--------------------------------+----------------------------------------------+------------------------------+--------------------------------------------------------------------+------------+
+|        | GET|HEAD                       | /                                            |                              | Closure                                                            |            |
+|        | POST                           | api/authenticate                             |                              | App\Http\Controllers\AuthenticateController@authenticate           |            |
+|        | GET|HEAD                       | api/authenticate                             | api.authenticate.index       | App\Http\Controllers\AuthenticateController@index                  |            |
+|        | POST                           | api/change-profile                           |                              | App\Http\Controllers\AuthenticateController@changeProfile          | jwt.auth   |
+|        | GET|HEAD                       | api/fb-login                                 |                              | App\Http\Controllers\AuthenticateController@fbLogin                |            |
+|        | GET|HEAD                       | api/index                                    |                              | App\Http\Controllers\AuthenticateController@index                  |            |
+|        | GET|HEAD|POST|PUT|PATCH|DELETE | api/logout                                   |                              | App\Http\Controllers\AuthenticateController@logOut                 |            |
+|        | POST                           | api/password-reset                           |                              | App\Http\Controllers\AuthenticateController@passwordReset          |            |
+|        | GET|HEAD                       | api/password-rest/{code?}                    |                              | App\Http\Controllers\AuthenticateController@index                  |            |
+|        | GET|HEAD                       | api/product-category                         | api.product-category.index   | App\Http\Controllers\ProductCategoryController@index               |            |
+|        | POST                           | api/product-category                         | api.product-category.store   | App\Http\Controllers\ProductCategoryController@store               |            |
+|        | GET|HEAD                       | api/product-category/create                  | api.product-category.create  | App\Http\Controllers\ProductCategoryController@create              |            |
+|        | PUT                            | api/product-category/{product_category}      | api.product-category.update  | App\Http\Controllers\ProductCategoryController@update              |            |
+|        | PATCH                          | api/product-category/{product_category}      |                              | App\Http\Controllers\ProductCategoryController@update              |            |
+|        | DELETE                         | api/product-category/{product_category}      | api.product-category.destroy | App\Http\Controllers\ProductCategoryController@destroy             |            |
+|        | GET|HEAD                       | api/product-category/{product_category}      | api.product-category.show    | App\Http\Controllers\ProductCategoryController@show                |            |
+|        | GET|HEAD                       | api/product-category/{product_category}/edit | api.product-category.edit    | App\Http\Controllers\ProductCategoryController@edit                |            |
+|        | POST                           | api/register-user                            |                              | App\Http\Controllers\AuthenticateController@registerUser           |            |
+|        | GET|HEAD                       | api/secure-page                              |                              | App\Http\Controllers\AuthenticateController@securePage             | jwt.auth   |
+|        | POST                           | api/secure-page                              |                              | App\Http\Controllers\AuthenticateController@securePage             | jwt.auth   |
+|        | GET|HEAD                       | landing                                      |                              | Closure                                                            |            |
+|        | GET|HEAD                       | password-reset-form/{code?}                  |                              | App\Http\Controllers\AuthenticateController@passwordResetForm      |            |
+|        | GET|HEAD                       | password-reset-request/{Email}               |                              | App\Http\Controllers\AuthenticateController@sendPasswordResetEmail |            |
+|        | GET|HEAD                       | password-reset/{code?}                       |                              | App\Http\Controllers\AuthenticateController@passwordReset          |            |
+|        | GET|HEAD                       | verify-email/{code}                          |                              | App\Http\Controllers\AuthenticateController@verifyEmail            |            |
++--------+--------------------------------+----------------------------------------------+------------------------------+--------------------------------------------------------------------+------------+

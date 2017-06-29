@@ -1,0 +1,13 @@
+.paypal-braintree-admin-header {
+	margin-top: 30px;
+	display: flex;
+	flex-direction: row;
+}
+
+.paypal-braintree-admin-brand {
+	flex-grow: 1;
+}
+
+.paypal-braintree-admin-connect-prompt {
+	font-weight: bold;
+}

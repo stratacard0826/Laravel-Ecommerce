@@ -1,0 +1,323 @@
+.subscribe_email_popup{
+  //position: absolute !important;
+
+  width: 1880px;
+  max-width: 80%;
+  left: auto;
+  bottom: auto;
+  top: 130px;
+  right: -11px;
+  z-index: 1052!important;
+
+  .alert{
+    &.alert[type="@success"]{
+      position: absolute;
+      bottom: 30%;
+      //font-size: 2.3rem;
+      //padding-right: 5% !important;
+    }
+  }
+
+  .alertme{
+    position: absolute;
+    top: 30%;
+    left: 24%;
+  }
+
+
+  @media(max-width: 992px) {
+    max-width: 95%;
+
+    .modal-dialog{
+      width: 800px;
+      max-width: 95%;
+    }
+  }
+
+  @media(max-width: 620px) {
+    left: 0;
+    bottom: auto;
+    top: 10px;
+    right: 0;
+    margin: auto;
+    //position: absolute !important;
+  }
+
+
+  .modal-content{
+    background: transparent !important;
+    box-shadow: none;
+    border: 0;
+  }
+
+  #subscribe_email_popup {
+    width: 1880px;
+    max-width: 100%;
+    background-color: #f7f7f7;
+
+    font-family: Montserrat, sans-serif !important;
+
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+
+    .modal-content{
+      background: transparent !important;
+    }
+
+    .img-holder{
+      position: relative;
+      background: #fff;
+
+      @media(max-width: 620px) {
+        min-height: 110px !important;
+      }
+    }
+
+    .img-holder,
+    .content-holder{
+      min-height: 502px;
+
+      @media(max-width: 992px) {
+        min-height: 520px;
+      }
+
+      @media(max-width: 830px) {
+        min-height: 545px;
+      }
+      @media(max-width: 620px) {
+        min-height: 0;
+      }
+    }
+
+    .content-holder {
+      background: #f7f7f7;
+    }
+
+    img{
+      position: absolute;
+      bottom: 0;
+      width: 117%;
+      max-width: none;
+      margin-left: -9%;
+      z-index: 10;
+
+      @media(max-width: 620px) {
+        width: auto;
+        height: 100%;
+        right: -45px;
+        display: block;
+      }
+
+    }
+
+    h4 {
+      display: inline;
+      position: absolute;
+      top: 16%;
+      left: 0;
+      max-width: 95%;
+      line-height: 1.3;
+      font-size: 1.6rem;
+      font-weight: bold;
+      padding-left: 25px;
+      z-index: 12;
+      color: #aeaeae;
+
+      //@media(max-width: 620px) {
+      //  font-size: 1.9rem;
+      //}
+      //
+      //@media(max-width: 768px) {
+      //  max-width: 80%;
+      //}
+
+      @media(max-width: 1000px) {
+        top: 13%;
+      }
+
+      b{
+        color: $iridium;
+        font-size: 4rem;
+
+        @media(max-width: 620px) {
+          font-size: 2.5rem;
+        }
+      }
+
+      //span {
+      //  padding: 0.2em;
+      //  padding-left: 0;
+      //  box-shadow: 0.2em 0 0 rgba($sky-blue, 0.7), -0.8em 0 0 rgba($sky-blue, 0.7);
+      //  background-color: rgba($sky-blue, 0.7);
+      //}
+    }
+
+    .password-wrap,
+    .confirm-wrap{
+      width: 48%;
+      float: left;
+      margin-right: 6px;
+    }
+
+    .password-input-holder{
+      margin-bottom: 3px;
+    }
+
+    .seen-on {
+      bottom: -10px;
+      height: 57px;
+      z-index: 12;
+
+      @media(max-width: 1000px) {
+        height: 64px;
+        bottom: -16px;
+      }
+      @media(max-width: 620px) {
+        display: none;
+      }
+
+      span {
+        height: 80px;
+        width: 90px;
+        float: left;
+
+        &.caption {
+          font-size: 1.2rem;
+          height: 20px;
+          margin-top: 13px;
+
+          //@media(max-width: 1000px) {
+          //  width: 100%;
+          //  margin-top: 33px;
+          //}
+        }
+
+        &.media-logo {
+          height: 40px;
+          display: inline-block;
+          text-indent: -9999px;
+
+          &.haffington-logo {
+            width: 149px;
+            background: url('/assets/images/newsletter-popup/huffington-logo-black.svg') no-repeat center;
+
+            @media(max-width: 620px) {
+              width: 170px;
+            }
+          }
+
+          //&.entrepreneur-logo {
+          //  background: url('/assets/images/newsletter-popup/entrepreneur-black.svg') no-repeat center;
+          //}
+
+          &.lifehack-logo {
+            background: url('/assets/images/newsletter-popup/lifehack-logo-black.svg') no-repeat center;
+
+            @media(max-width: 620px) {
+              margin-left: 36%;
+              margin-top: -11px;
+            }
+          }
+        }
+      }
+    }
+
+    .content-holder {
+      padding: 3% 5% 2%;
+      z-index: 12;
+    }
+
+    .toggles {
+      height: 39px;
+      padding: 0;
+      border-bottom: 2px solid #d4d4d4;
+
+      .swing-lined {
+        height: 40px;
+
+        &.active {
+          color: $iridium;
+        }
+      }
+
+      span {
+        display: block;
+        height: 42px;
+        max-height: 41px;
+        padding-bottom: 18px;
+        padding-right: 24px;
+        font-size: 1.8rem;
+        text-align: center;
+      }
+
+    }
+    @media(max-width:620px){
+      .content-register{
+        display: none;
+      }
+      .content-subscribe{
+        display: block;
+      }
+    }
+
+    //.alert-dismissable, .alert-dismissible{
+    //  padding: 0;
+    //
+    //  .close{
+    //    display: none;
+    //  }
+    //}
+    .why-join {
+      margin-top: 25px;
+      //margin-bottom: 15px;
+      font-weight: bold;
+
+      li {
+        padding-bottom: 15px;
+        font-size: 1.2rem;
+
+        &.greyscale{
+          color: #888;
+        }
+
+        .m-icon {
+          padding-right: 4px;
+        }
+      }
+    }
+    .black-footer {
+      //padding-top: 5px;
+      z-index: 12;
+      color: #333;
+
+      position: relative;
+      bottom: -18px;
+      right: -24px;
+
+      @media(max-width:620px){
+        bottom: -4px;
+        right: -7px;
+      }
+
+      b{
+        cursor: pointer;
+      }
+
+      i {
+        padding-left: 20px;
+        color: #333;
+        top: 2px;
+        position: relative;
+      }
+    }
+
+    .btn-success {
+      margin-top: 17px;
+      padding-top: 11px;
+    }
+
+
+
+  }
+}

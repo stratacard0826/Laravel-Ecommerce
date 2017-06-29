@@ -1,0 +1,207 @@
+/* mixins generic */
+
+// Opacity
+@mixin opacity($value, $ie:true) {
+  opacity: $value;
+  @if $ie == true {
+    $IEValue: $value*100;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity="+$IEValue+")";
+        filter: alpha(opacity=$IEValue);
+  }
+}
+
+// Transition
+@mixin transition($properties) {
+ -webkit-transition: $properties;
+    -moz-transition: $properties;
+     -ms-transition: $properties;
+      -o-transition: $properties;
+         transition: $properties;
+}
+
+// Animation
+@mixin animation($params) {
+  -webkit-animation: $params;
+     -moz-animation: $params;
+          animation: $params;
+}
+
+// Transform
+@mixin transform($params) {
+  -webkit-transform: $params;
+     -moz-transform: $params;
+          transform: $params;
+}
+@mixin transform-style ($params) {
+  -webkit-transform-style: $params;
+     -moz-transform-style: $params;
+          transform-style: $params;
+}
+
+// Perspective
+@mixin perspective($depth: none) { // none | <length>
+  -webkit-perspective: $depth;
+     -moz-perspective: $depth;
+          perspective: $depth;
+}
+@mixin perspective-origin($value: 50% 50%) {
+  -webkit-perspective-origin: $value;
+     -moz-perspective-origin: $value;
+          perspectiv-origine: $value;
+}
+
+// Filter
+@mixin filter($properties) {
+  -webkit-filter: $properties;
+          filter: $properties;
+}
+
+// Box Shadow
+@mixin box-shadow ($properties) {
+  -webkit-box-shadow: $properties;
+     -moz-box-shadow: $properties;
+          box-shadow: $properties;
+}
+
+// Box Shadow
+@mixin border-radius ($properties) {
+  -webkit-border-radius: $properties;
+     -moz-border-radius: $properties;
+          border-radius: $properties;
+}
+
+//Retina image
+@mixin retina-img($url, $width, $height) {
+    @media only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (   min--moz-device-pixel-ratio: 2),
+    only screen and (     -o-min-device-pixel-ratio: 2/1),
+    only screen and (        min-device-pixel-ratio: 2),
+    only screen and (                min-resolution: 192dpi),
+    only screen and (                min-resolution: 2dppx) {
+        /* on retina, use image that's scaled by 2 */
+        background-image: url($url);
+        background-size: $width $height;
+    }
+}
+
+
+@mixin color-round-box($color, $image-link) {
+	color: $color;
+      i.m-icon{
+          background: $color;
+      }
+      b{
+          color: $color;
+      }
+}
+
+
+@mixin round-box() {
+	display:  inline-block;
+	width: 35px;
+	height: 35px;
+	font-size: 1.7rem;
+	border-radius: 30px;
+	background: transparent;
+    text-align: center;
+
+    i.m-icon{
+        color: white;
+        padding: 5px;
+        border-radius: 20px;
+        padding-top: 7px;
+        padding-left: 7px;
+        padding-right: 7px;
+        padding-bottom: 6px;
+        float: left;
+    }
+
+	//b{
+	//	display: inline-block;
+     //   position: relative;
+	//	top: 5px;
+	//}
+
+	&:hover{
+		i{
+          -moz-transform: scale(1,1);
+          -webkit-transform: scale(1,1);
+          transform: scale(1,1);
+          /*animation-name*/
+          -webkit-animation-name: burst;
+          -moz-animation-name: burst;
+          -ms-animation-name: burst;
+          -o-animation-name: burst;
+          animation-name: burst;
+          /*animation-duration*/
+          -webkit-animation-duration: .4s;
+          -moz-animation-duration: .4s;
+          -ms-animation-duration: .4s;
+          -o-animation-duration: .4s;
+          animation-duration: .4s;
+          /*transform-origin*/
+          -webkit-transform-origin: 50% 50%;
+          -moz-transform-origin: 40px 38px !important;
+          -ms-transform-origin: 50% 50%;
+          -o-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+        }
+	}
+
+  @keyframes burst {
+    0%{
+      transform: scale(1,1);
+      animation-timing-function: ease-in;
+    }
+  37% {
+    transform: scale(1.5,1.5);
+    animation-timing-function: ease-out;
+  }
+  55% {
+    transform: scale(1.37,1.37);
+    animation-timing-function: ease-in;
+  }
+  73% {
+    transform: scale(1,1);
+    animation-timing-function: ease-out;
+  }
+  82% {
+    transform: scale(1.45,1.45);
+    animation-timing-function: ease-in;
+  }
+  91% {
+    transform: scale(1.5,1.5);
+    animation-timing-function: ease-out;
+  }
+  96% {
+    transform: scale(1.4,1.4);
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform: scale(1,1);
+    animation-timing-function: ease-out;
+  }
+}
+
+}
+@mixin idea-hero-tags($color) {
+      span{
+/*        background-image: url('/assets/images/icons/bag-glow-red.png');*/
+      }
+      h6{
+        background: $color;
+      }
+      img.round{
+        border-color: $color !important;
+        -webkit-box-shadow: 0px 0px 62px 5px $color;
+        -moz-box-shadow: 0px 0px 62px 5px $color;
+        box-shadow: 0px 0px 62px 5px $color;
+      }
+      .hover-box{
+        &::before{
+          border-color: transparent transparent $color transparent;
+        }
+      }
+
+}
+

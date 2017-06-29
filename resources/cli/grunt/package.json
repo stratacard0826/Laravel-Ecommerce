@@ -1,0 +1,32 @@
+{
+  "name": "Ideaing",
+  "description": "Ideaing",
+  "version": "v2.9.6",
+  "private": true,
+  "readme": "../../README.md",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ideaing/ideaing.git"
+  },
+  "apidoc": {
+    "name": "Ideaing API",
+    "description": "Ideaing API Documents.",
+    "title": "Ideaing API Documents",
+    "url": "https://ideaing.com/api",
+    "template": {
+      "withGenerator": false
+    }
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-apidoc": "~0.7.0",
+    "grunt-closure-tools": "^0.9.9",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-cssmin": "^1.0.1",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-nodeunit": "~0.4.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}

@@ -1,0 +1,15 @@
+/.env
+.idea/
+Vagrantfile
+.vagrant/
+.sass-cache/
+/config.codekit
+/public/ideas/wp-config.php
+/public/ideas/wp-content/uploads/
+/public/ideas/wp-content/plugins/blade/storage/views/
+/node_modules
+/resources/cli/grunt/node_modules/
+/resources/cli/grunt/externs/
+/resources/assets/main/css/app.css.map
+resources/assets/main/css/app.css.map
+.DS_Store

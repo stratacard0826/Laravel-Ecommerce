@@ -1,0 +1,14 @@
+/* Unfortunately, the Checkout with PayPal button can pick up styles from the theme.  So we need to reset at least these and possibly more depending on the theme.*/
+
+#paypal-braintree-button-container {
+	text-align: right;
+}
+
+#paypal-braintree-button-container button {
+	box-shadow: none;
+	background-color: transparent;
+}
+
+#paypal-braintree-button-container button:hover {
+	background-color: transparent;
+}

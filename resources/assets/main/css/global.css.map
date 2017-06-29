@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEA,UAUC;EATC,WAAW,EAAE,YAAY;EACzB,GAAG,EAAC,8BAA8B;EAClC,GAAG,EAAC,6NAGqD;EACzD,WAAW,EAAE,MAAM;EACnB,UAAU,EAAE,MAAM;AAKnB,sEAAyB;EACxB,OAAO,EAAE,cAAc;EACvB,WAAW,EAAE,uBAAuB;EACpC,UAAU,EAAE,iBAAiB;EAC7B,WAAW,EAAE,iBAAiB;EAC9B,YAAY,EAAE,iBAAiB;EAC/B,cAAc,EAAE,eAAe;EAC/B,KAAK,EAAE,IAAI;EACX,SAAS,EAAE,IAAI;EACf,WAAW,EAAE,GAAG;EAChB,sBAAsB,EAAE,WAAW;EACnC,uBAAuB,EAAE,SAAS",
+"sources": ["../../ideas/wp-content/plugins/amazon-web-services/assets/sass/global.scss"],
+"names": [],
+"file": "global.css"
+}

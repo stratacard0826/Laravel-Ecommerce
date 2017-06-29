@@ -1,0 +1,42 @@
+#wc-paypal-braintree-card-number, #wc-paypal-braintree-cvv, #wc-paypal-braintree-expiration-date {
+	height: 30px;
+	border: 1px solid #ddd;
+	padding-left: 10px;
+	-webkit-transition: border-color 160ms;
+	transition: border-color 160ms;
+}
+
+#wc-paypal-braintree-card-number.braintree-hosted-fields-focused,
+#wc-paypal-braintree-cvv.braintree-hosted-fields-focused,
+#wc-paypal-braintree-expiration-date.braintree-hosted-fields-focused {
+	border-color: #aaa;
+}
+
+#wc-paypal-braintree-card-number.braintree-hosted-fields-invalid,
+#wc-paypal-braintree-cvv.braintree-hosted-fields-invalid,
+#wc-paypal-braintree-expiration-date.braintree-hosted-fields-invalid {
+	border-color: tomato;
+}
+
+#wc-paypal-braintree-card-number.braintree-hosted-fields-valid,
+#wc-paypal-braintree-cvv.braintree-hosted-fields-valid,
+#wc-paypal-braintree-expiration-date.braintree-hosted-fields-valid {
+	border-color: limegreen;
+}
+
+/* Override unwanted styles */
+
+#payment .payment_methods li.payment_method_paypalbraintree_paypal img,
+#payment .payment_methods li.payment_method_paypalbraintree_cards img {
+	float: none;
+	display: inline-block;
+	vertical-align: bottom;
+}
+
+/* Cancel button styles for checkout view */
+
+.wc-gateway-paypal-braintree-cancel {
+	display: block;
+	text-align: center;
+	padding: 10px;
+}

@@ -1,0 +1,83 @@
+/* main */
+
+@charset "UTF-8";
+
+// Configurations
+// ---------------------------
+@import "_app/config";
+
+// Load Website defaults
+// ---------------------------
+@import "_app/default";
+ 
+// SCSS Functions
+// ---------------------------
+@import "_app/functions";
+
+// SCSS Mixins
+// ---------------------------
+@import "_app/mixins";
+
+// SCSS Effects
+// ---------------------------
+@import "_app/effects";
+
+// SCSS Responsive behaviour
+// ---------------------------
+@import "_app/responsive";
+
+// Bootstrap
+// ---------------------------
+@import "bootstrap";
+
+// Adding app.scss
+// changed app.scss to ideaing.scss
+// ---------------------------
+@import "ideaing";
+
+// Application
+// ---------------------------
+@import "_app/app";
+
+
+@charset "UTF-8";
+
+// Base Compiler
+// ---------------------------
+@import "_app/_base/fonts";
+@import "_app/_base/forms";
+@import "_app/_base/links";
+@import "_app/_base/list";
+@import "_app/_base/media";
+@import "_app/_base/table";
+@import "_app/_base/text";
+@import "_app/_base/colors";
+
+
+// Modules Compiler
+// ---------------------------
+@import "_app/_modules/box-item";
+@import "_app/_modules/slider";
+@import "_app/_modules/header";
+@import "_app/_modules/footer";
+@import "_app/_modules/comments";
+@import "_app/_modules/share-bar";
+@import "_app/_modules/slider";
+
+// Pages Compiler
+// ---------------------------
+@import "_app/_pages/layout";
+@import "_app/_pages/homepage";
+@import "_app/_pages/category";
+@import "_app/_pages/giveaway";
+@import "_app/_pages/loginsignup";
+@import "_app/_pages/ideas";
+@import "_app/_pages/infopages";
+@import "_app/_pages/newsletter";
+@import "_app/_pages/product";
+@import "_app/_pages/room";
+@import "_app/_pages/search";
+@import "_app/_pages/shop";
+@import "_app/_pages/user";
+@import "_app/_pages/forum";
+
