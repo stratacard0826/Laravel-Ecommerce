@@ -12,4 +12,5 @@ Vagrantfile
 /resources/cli/grunt/externs/
 /resources/assets/main/css/app.css.map
 resources/assets/main/css/app.css.map
+/vendor
 .DS_Store
